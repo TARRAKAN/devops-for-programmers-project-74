@@ -1,7 +1,10 @@
 services:
   app:
+    image: tarrakan/devops-for-programmers-project-74
+    restart: always
     build:
       context: .
+      dockerfile: Dockerfile.production
     volumes:
       - ./app:/app
     command: make test
