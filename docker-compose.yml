@@ -5,6 +5,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
-    volumes:
-      - ./app:/app
     command: make test
